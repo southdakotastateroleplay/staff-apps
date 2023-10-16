@@ -16,7 +16,7 @@
 <div class="content">
   <h1>SDSRP Application Form</h1>
 
-  <form name="contact" netlify>
+  <form name="contact" method="POST" netlify>
     <label for="q1">What is your Roblox username and profile ID? (Short Answer)</label><br>
     <input type="text" id="q1" name="q1"><br><br>
 
@@ -119,21 +119,9 @@
     <label for="q34">Please state your username in our dizzy (bit.ly/sdsrpdiz) (Short Answer)</label><br>
     <input type="text" id="q34" name="q34"><br><br>
 
-    <button type="submit" id="submitButton">Submit</button>
+    <button type="submit">Submit</button>
   </form>
 </div>
-
-<script>
-  const form = document.querySelector('form[name="contact"]');
-  const submitButton = document.getElementById('submitButton');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submission
-
-    // Redirect to /submit-form
-    window.location.href = '/submit-form';
-  });
-</script>
 
 </body>
 </html>
