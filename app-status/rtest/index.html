@@ -4,71 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application Accepted</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-    
-    .accepted-text {
-      font-size: 2em;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .learn-more-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1em;
-      background-color: #3498db;
-      border: none;
-      color: #fff;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .learn-more-button:hover {
-      background-color: #2980b9;
-    }
-
-    .taskbar {
-      width: 100%;
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .taskbar a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="taskbar">
-    <a href="/">Home</a>
-    <a href="/app-status">Check Application Status</a>
-  </div>
 
+<div class="taskbar">
+  <a href="/">Home</a>
+  <a href="/app-status">Check Application Status</a>
+</div>
+
+<div class="content">
   <div class="accepted-text">
     <p>Application Accepted!</p>
     <button class="learn-more-button" onclick="redirectToAcceptedNotice()">Learn More</button>
   </div>
+</div>
 
-  <script>
-    function redirectToAcceptedNotice() {
-      window.location.href = "/notice/accepted";
-    }
-  </script>
+<script>
+  function redirectToAcceptedNotice() {
+    window.location.href = "/notice/accepted";
+  }
+</script>
+
 </body>
 </html>
