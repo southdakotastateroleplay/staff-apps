@@ -13,7 +13,7 @@
 
     <div class="taskbar">
         <span>Welcome, New Moderator!</span>
-        <a href="#">Contact Dizzy Staff</a>
+        <a href="mailto:contact@sdsrp.com">Contact Dizzy Staff</a>
     </div>
 
     <div class="content">
@@ -36,8 +36,14 @@
         <h2>5. Familiarize with Moderation Tools</h2>
         <p>Learn to use the provided moderation tools to monitor and manage interactions and reported issues.</p>
 
-        <button>Contact Dizzy Staff</button>
+        <button onclick="contactDizzyStaff()">Contact Dizzy Staff</button>
     </div>
+
+    <script>
+        function contactDizzyStaff() {
+            window.location.href = "mailto:contact@sdsrp.com";
+        }
+    </script>
 
 </body>
 
