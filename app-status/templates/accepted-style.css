@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Beige or any brownish color you prefer */
+    margin: 0;
+    padding: 0;
+}
+
+.taskbar {
+    background-color: #8B4513; /* SaddleBrown or any brownish color you prefer */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.taskbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.taskbar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.big-text {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #8B4513; /* SaddleBrown or any brownish color you prefer */
+}
+
+.small-text {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #8B4513; /* SaddleBrown or any brownish color you prefer */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #8B4513; /* SaddleBrown or any brownish color you prefer */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D; /* Sienna or any slightly darker brownish color you prefer */
+}
