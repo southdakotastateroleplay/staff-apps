@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application Accepted</title>
+</head>
+<body>
+    <div class="taskbar">
+        <a href="/">Home</a>
+        <a href="/app-status">Check Application Status</a>
+    </div>
+
+    <div class="content">
+        <p class="small-text">Your current status of the application:</p>
+        <p class="big-text">Accepted</p>
+        <p>Congratulations on being accepted onto the SDSRP Moderation Team!</p>
+        <button onclick="redirectToAcceptedNotice()">Learn More</button>
+    </div>
+
+    <script>
+        function redirectToAcceptedNotice() {
+            window.location.href = "/notice/accepted";
+        }
+    </script>
+</body>
+</html>
