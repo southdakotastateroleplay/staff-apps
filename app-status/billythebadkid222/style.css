@@ -37,3 +37,8 @@ body {
     font-weight: bold;
     color: #8B4513; /* SaddleBrown or any color you prefer */
 }
+
+.small-text {
+    font-size: 1em;
+    color: #8B4513; /* SaddleBrown or any color you prefer */
+}
