@@ -1,60 +1,29 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5dc; /* Beige or any brownish color you prefer */
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application Accepted</title>
+</head>
+<body>
+    <div class="taskbar">
+        <a href="/">Home</a>
+        <a href="/app-status">Check Application Status</a>
+    </div>
 
-.taskbar {
-    background-color: #8B4513; /* SaddleBrown or any brownish color you prefer */
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
+    <div class="content">
+        <p class="small-text">Your current status of the application:</p>
+        <p class="big-text">Accepted</p>
+        <p>Congratulations on being accepted onto the SDSRP Moderation Team!</p>
+        <button onclick="redirectToAcceptedNotice()">Learn More</button>
+    </div>
 
-.taskbar a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.taskbar a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.big-text {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    color: #8B4513; /* SaddleBrown or any brownish color you prefer */
-}
-
-.small-text {
-    font-size: 0.8em;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #8B4513; /* SaddleBrown or any brownish color you prefer */
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #8B4513; /* SaddleBrown or any brownish color you prefer */
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #A0522D; /* Sienna or any slightly darker brownish color you prefer */
-}
+    <script>
+        function redirectToAcceptedNotice() {
+            window.location.href = "/notice/accepted";
+        }
+    </script>
+</body>
+</html>
