@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .announcement-bar {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
     <title>SDSRP Application Form</title>
 </head>
 <body>
+    <div class="announcement-bar">
+        <p>Our application reviewers will be offline starting 12/25-12/28. Your application may be delayed in reviewing, and we apologize if this is the case.</p>
+    </div>
+
     <div class="taskbar">
         <a href="/">Home</a>
         <a href="/app-status">Check Application Status</a>
@@ -16,7 +28,7 @@
     <div class="content">
         <h1>SDSRP Application Form</h1>
         <form name="contact" method="POST" action="https://api.sdsrp.com/process.php">
-            <p>
+               <p>
                 <label>Roblox Username:</label>
                 <input type="text" name="roblox-username" required>
             </p>
