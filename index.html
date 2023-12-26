@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="announcement-bar">
-        <p>Our application reviewers will be offline starting 12/25-12/28. Your application may be delayed in reviewing, and we apologize for any inconvience.</p>
+        <p>Our application reviewers will be offline starting 12/25-12/28. Your application may be delayed in reviewing, and we apologize for any inconvenience.</p>
     </div>
 
     <div class="taskbar">
@@ -27,8 +27,8 @@
 
     <div class="content">
         <h1>SDSRP Application Form</h1>
-        <form name="contact" method="POST" action="https://api.sdsrp.com/process.php">
-               <p>
+        <form name="contact" method="POST" action="https://api.sdsrp.com/process.php" data-callback="onSubmit">
+           <p>
                 <label>Roblox Username:</label>
                 <input type="text" name="roblox-username" required>
             </p>
@@ -97,11 +97,19 @@
                 <textarea name="hire-reason"></textarea>
             </p>
             <p>
-                <label>What is your email so we can contact you?</label>
-                <input type="email" name="email" required>
-            </p>
+            <!-- Cloudflare Turnstile Check -->
+            <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0x4AAAAAAAPH9eg2FCm3lpbT"></script>
 
-            <button type="submit">Submit</button>
+            <!-- Google reCAPTCHA script -->
+            <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+            <script>
+                function onSubmit(token) {
+                    document.forms["contact"].submit();
+                }
+            </script>
+
+            <!-- Submit button with reCAPTCHA -->
+            <button type="button" onclick="grecaptcha.execute();">Submit</button>
         </form>
     </div>
 </body>
